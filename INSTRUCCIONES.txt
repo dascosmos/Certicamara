@@ -1,11 +1,14 @@
+David Alejandro Salazar Sarmiento C.C. 1.032.470.061
+
+
 INSTRUCCIONES DE MANEJO DEL PROGRAMA.
 
-Este programa est· diseÒado para que se corra con el ide IntelliJ Idea,
+Este programa est√° dise√±ado para que se corra con el ide IntelliJ Idea,
 sin embargo se puede compilar en eclipse normalmente.
 
-- Al momento de compilar se debe introducir el tamaÒo de la matriz en filas y columnas.
-- DespuÈs se debe ingresar los comandos con el formato <desplazamiento>,<direcccion>;
-  el ";" al final es necesario asÌ sea solo un comando a ingresar.
+- Al momento de compilar se debe introducir el tama√±o de la matriz en filas y columnas.
+- Despu√©s se debe ingresar los comandos con el formato <desplazamiento>,<direcccion>;
+  el ";" al final es necesario as√≠ sea solo un comando a ingresar.
 - Las pruebas unitarias fueron generadas con el framework gradle, por esto es mejor ejecutar
   el programa con IntelliJ.
 
