@@ -1,0 +1,47 @@
+/**
+ * Created by David on 7/5/2017.
+ */
+public class ControlRemoto {
+
+    Carro carro = new Carro();
+    Formato formato = new Formato();
+
+    public void createElements(int x, int y){
+        carro.crearSuperficie(x,y);
+    }
+
+    public String movimiento(String comando){
+        String[] listaComandos;
+        int posx = 0;
+        int posy = 0;
+        String sol="";
+
+            if (formato.RevisionNumero(comando)==true) {
+                    listaComandos = comando.split(";");
+                    for (int i = 0; i < listaComandos.length; i++) {
+                        carro.getComando().movimiento(listaComandos[i]);
+                        carro.setPosicion_x(carro.getComando().getPosx());
+                        carro.setPosicion_y(carro.getComando().getPosy());
+                        posx = carro.getPosicion_x();
+                        posy = carro.getPosicion_y();
+
+                        if(carro.getSuperficie().limite(posx, posy)==true) {
+                            sol += "Posicion: " + posx + "," + posy+" ";
+                            System.out.println("\n");
+                        }else{
+                            sol = "Está fuera de los limites";
+                        }
+
+                    }
+
+                carro.getSuperficie().imprimirSuperficie(posx,posy);
+
+            } else {
+                sol= "Formato Erroneo";
+            }
+
+        return sol;
+    }
+
+
+}

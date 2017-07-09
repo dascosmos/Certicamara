@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Certicamara.iml" filepath="$PROJECT_DIR$/.idea/modules/Certicamara.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Certicamara_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Certicamara_main.iml" group="Certicamara" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Certicamara_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Certicamara_test.iml" group="Certicamara" />
+    </modules>
+  </component>
+</project>
