@@ -1,0 +1,13 @@
+INSTRUCCIONES DE MANEJO DEL PROGRAMA.
+
+Este programa está diseñado para que se corra con el ide IntelliJ Idea,
+sin embargo se puede compilar en eclipse normalmente.
+
+- Al momento de compilar se debe introducir el tamaño de la matriz en filas y columnas.
+- Después se debe ingresar los comandos con el formato <desplazamiento>,<direcccion>;
+  el ";" al final es necesario así sea solo un comando a ingresar.
+- Las pruebas unitarias fueron generadas con el framework gradle, por esto es mejor ejecutar
+  el programa con IntelliJ.
+
+IntelliJ se puede descargar en el siguiente link: https://www.jetbrains.com/idea/download/index.html#section=windows
+se descarga la community edition que tiene licencia gratuita.
