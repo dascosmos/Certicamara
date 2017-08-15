@@ -17,7 +17,8 @@ public class Main {
             System.out.println("escoja una opción: \n"+
                     "1. Crear pista.\n"+
                     "2. Ingresar comando.\n"+
-                    "3. Salir.\n"+
+                    "3. Imprimir historial de comandos.\n"+
+                    "4. Salir.\n"+
                     "Su opcion:\n");
             opc = entrada.nextInt();
 
@@ -37,11 +38,15 @@ public class Main {
                     System.out.println(resultado);
                     break;
                 case 3:
+                        System.out.println(obj.imprimirHistorial());
+                    break;
+                case 4:
                     System.out.println("Gracias");
                     break;
+
                 default:
                     System.out.println("Opcion incorrecta.");
             }
-        }while(opc!=3);
+        }while(opc!=4);
     }
 }

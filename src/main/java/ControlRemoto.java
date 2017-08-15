@@ -1,3 +1,7 @@
+import Mongo.MongoConnection;
+
+import java.util.ArrayList;
+
 /**
  * Created by David on 7/5/2017.
  */
@@ -5,9 +9,11 @@ public class ControlRemoto {
 
     private Carro carro = new Carro();
     private Formato formato = new Formato();
-
+    private MongoConnection mongo = new MongoConnection();
     public void createElements(int x, int y){
         carro.crearSuperficie(x,y);
+        mongo.createConnection();
+        mongo.createDatabase();
     }
 
     public String movimiento(String comando){
@@ -39,8 +45,12 @@ public class ControlRemoto {
             } else {
                 sol= "Formato Erroneo";
             }
-
+        mongo.createComand(sol);
         return sol;
+    }
+
+    public ArrayList imprimirHistorial(){
+       return mongo.printHistory();
     }
 
 
