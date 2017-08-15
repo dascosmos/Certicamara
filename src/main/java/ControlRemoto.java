@@ -3,8 +3,8 @@
  */
 public class ControlRemoto {
 
-    Carro carro = new Carro();
-    Formato formato = new Formato();
+    private Carro carro = new Carro();
+    private Formato formato = new Formato();
 
     public void createElements(int x, int y){
         carro.crearSuperficie(x,y);
@@ -16,7 +16,7 @@ public class ControlRemoto {
         int posy = 0;
         String sol="";
 
-            if (formato.RevisionNumero(comando)==true) {
+            if (formato.RevisionNumero(comando)) {
                     listaComandos = comando.split(";");
                     for (int i = 0; i < listaComandos.length; i++) {
                         carro.getComando().movimiento(listaComandos[i]);
@@ -25,7 +25,7 @@ public class ControlRemoto {
                         posx = carro.getPosicion_x();
                         posy = carro.getPosicion_y();
 
-                        if(carro.getSuperficie().limite(posx, posy)==true) {
+                        if(carro.getSuperficie().limite(posx, posy)) {
                             sol += "Posicion: " + posx + "," + posy+" ";
                             System.out.println("\n");
                         }else{
