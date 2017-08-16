@@ -10,10 +10,16 @@ public class ControlRemoto {
     private Carro carro = new Carro();
     private Formato formato = new Formato();
     private MongoConnection mongo = new MongoConnection();
-    public void createElements(int x, int y){
-        carro.crearSuperficie(x,y);
+
+    @Deprecated
+    public void createConnection(){
         mongo.createConnection();
         mongo.createDatabase();
+    }
+
+    public void createElements(int x, int y){
+        carro.crearSuperficie(x,y);
+
     }
 
     public String movimiento(String comando){

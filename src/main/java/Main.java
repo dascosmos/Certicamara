@@ -13,6 +13,7 @@ public class Main {
                 "2. De la orden al carro en el formato <desplazamiento>,<direccion>; el ';' es necesario al final del comando.\n" +
                 "3. Puede enviar varios comandos siempre y cuando se respete el punto anterior. Ejemplo, 3,N;2,O;1,S;\n" +
                 "4. para la dirección se usa las letras N,S,O,E no escribir minusculas.\n");
+        obj.createConnection();
         do {
             System.out.println("escoja una opción: \n"+
                     "1. Crear pista.\n"+
